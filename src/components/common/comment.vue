@@ -28,7 +28,9 @@ export default {
     return {
       commentList: [],
       pageIndex: 1,
+      //元素的显示与隐藏
       isShowMoreBtn: true,
+      //评论组件
       postContent: ""
     };
   },
@@ -44,7 +46,7 @@ export default {
         console.log(res.data);
         if (res.data.status == 0) {
           if(res.data.message.length>0){
-
+            //对评论组件的数组进行拼接
             this.commentList = this.commentList.concat(res.data.message);
           }else{
             this.isShowMoreBtn = false;
@@ -66,19 +68,16 @@ export default {
           data:"content="+this.postContent
      
         }).then(res =>{
-          if(res.data.status){
+          if(res.data.status == false ){
            this.commentList.unshift({
               user_name: "匿名用户",
               add_time: new Date(),
               content: this.postContent
             })
-            
-          }
           this.postContent = "";
-             
+          }
         })
       }
-      window.location.href=window.location.href
     }
   },
 

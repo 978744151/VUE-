@@ -9,12 +9,12 @@
 		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><router-link to="/home/newlist">
 		                    <span><img src="../../images/menu1.png" alt=""></span>
 		                    <div class="mui-media-body">新闻咨询</div></router-link></li>
-		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><router-link to="/home/photolist/0">
 		                    <span><img src="../../images/menu2.png" alt=""></span>
-		                    <div class="mui-media-body">图片分享</div></a></li>
-		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+		                    <div class="mui-media-body">图片分享</div></router-link></li>
+		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><router-link to="/home/goodslist">
 		                    <span><img src="../../images/menu3.png" alt=""></span>
-		                    <div class="mui-media-body">商品购买</div></a></li>
+		                    <div class="mui-media-body">商品购买</div></router-link></li>
 		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
 		                    <span><img src="../../images/menu4.png" alt=""></span>
 		                    <div class="mui-media-body">留言反馈</div></a></li>

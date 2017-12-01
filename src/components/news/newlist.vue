@@ -16,7 +16,7 @@
 				</li>
 			</ul>
   </div>
-</template>
+</template>]
 
 <script>
 import dataformatter from "../filter/dataformatter.js"
@@ -24,21 +24,25 @@ import axios from "axios"
 export default {
     data(){
         return {
+            // 传入的值
             newlist:[]
         }
     },
     created(){
+        // 进行渲染
         axios({
             url:'http://vue.studyit.io/api/getnewslist',
             method:'get'
         }).then(res=>{
             console.log(res.data)
             if(res.data.status ==0){
+                // 渲染
                 this.newlist = res.data.message
             }
         })
     },
     filters:{
+        // 日期渲染
     dataformatter
     }
 }

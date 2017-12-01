@@ -10,6 +10,7 @@
          
       </div>
       <div class="news-comment">
+          <!-- 组件 -->
           <comment :id="$route.params.id"></comment>
       </div>
   </div>
@@ -18,6 +19,7 @@
 <script>
 import dataformatter from "../filter/dataformatter.js"
 import axios from "axios"
+// 别名组件
 import comment from "../common/comment.vue"
 export default {
     data(){
@@ -38,6 +40,7 @@ export default {
     filters:{
         dataformatter
     },
+    // 注册组件
     components:{
         comment
     }
